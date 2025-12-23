@@ -16,267 +16,207 @@
 
 <body>
     <div class="container">
+        <!-- Global Header Placeholder -->
+        <header id="global-header"></header>
+
         <header>
             <!-- Replace with your project's actual name -->
-            <h1>Project Name</h1>
+            <h1 style="border-bottom: none; padding-bottom: 0;">Project Name</h1>
             <!-- Replace with a brief description of what your project does -->
             <p class="subtitle">A brief, one-to-two line description of what this project does and who it's for.</p>
         </header>
 
-        <main>
-            <!-- Why This Project Exists -->
-            <section id="why">
-                <h2>Why This Project Exists</h2>
-                <!-- Describe the problem this project solves and the motivation behind creating it -->
-                <p>This project addresses <strong>[specific problem or need]</strong>. Existing solutions often
-                    <strong>[limitation or gap]</strong>, and this project was created to <strong>[how it solves the
-                        problem differently or better]</strong>.</p>
-            </section>
+        <div class="layout-wrapper">
+            <!-- Global Sidebar Placeholder -->
+            <aside id="global-sidebar" class="sidebar"></aside>
 
-            <div class="divider"></div>
+            <main class="main-content">
+                <!-- Why This Project Exists -->
+                <section id="why">
+                    <h2>Why This Project Exists</h2>
+                    <p>This project addresses <strong>[specific problem or need]</strong>. Existing solutions often
+                        <strong>[limitation or gap]</strong>, and this project was created to <strong>[how it solves the
+                            problem differently or better]</strong>.
+                    </p>
+                </section>
 
-            <!-- Key Features -->
-            <section id="features">
-                <h2>Key Features</h2>
-                <!-- List the core capabilities and distinguishing features -->
-                <ul>
-                    <li><strong>Feature one:</strong> brief explanation</li>
-                    <li><strong>Feature two:</strong> brief explanation</li>
-                    <li><strong>Feature three:</strong> brief explanation</li>
-                    <li><strong>Feature four:</strong> brief explanation</li>
-                </ul>
-            </section>
+                <div class="divider"></div>
 
-            <div class="divider"></div>
+                <!-- Key Features -->
+                <section id="features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Feature one:</strong> brief explanation</li>
+                        <li><strong>Feature two:</strong> brief explanation</li>
+                        <li><strong>Feature three:</strong> brief explanation</li>
+                        <li><strong>Feature four:</strong> brief explanation</li>
+                    </ul>
+                </section>
 
-            <!-- Architecture Overview -->
-            <section id="architecture">
-                <h2>Architecture Overview</h2>
-                <!-- Provide a high-level view of how the system is structured -->
-                <p>This project follows a <strong>[architecture pattern, e.g., modular, microservices,
-                        client-server]</strong> architecture. The main components include:</p>
-                <ul>
-                    <li><strong>Component A:</strong> Handles [responsibility]</li>
-                    <li><strong>Component B:</strong> Manages [responsibility]</li>
-                    <li><strong>Component C:</strong> Provides [responsibility]</li>
-                </ul>
-                <p>Data flows from <strong>[source]</strong> through <strong>[processing layers]</strong> to
-                    <strong>[destination]</strong>. The system is designed to be
-                    <strong>[scalable/extensible/maintainable]</strong>.</p>
-            </section>
+                <div class="divider"></div>
 
-            <div class="divider"></div>
+                <!-- Architecture Overview -->
+                <section id="architecture">
+                    <h2>Architecture Overview</h2>
+                    <p>This project follows a <strong>[architecture pattern, e.g., modular, microservices,
+                            client-server]</strong> architecture. The main components include:</p>
+                    <ul>
+                        <li><strong>Component A:</strong> Handles [responsibility]</li>
+                        <li><strong>Component B:</strong> Manages [responsibility]</li>
+                        <li><strong>Component C:</strong> Provides [responsibility]</li>
+                    </ul>
+                    <p>Data flows from <strong>[source]</strong> through <strong>[processing layers]</strong> to
+                        <strong>[destination]</strong>. The system is designed to be
+                        <strong>[scalable/extensible/maintainable]</strong>.
+                    </p>
+                </section>
 
-            <!-- Technology Stack -->
-            <section id="tech-stack">
-                <h2>Technology Stack</h2>
-                <!-- List the primary technologies, frameworks, and tools used -->
-                <div class="tech-stack">
-                    <div class="tech-item">
-                        <span class="tech-label">Language</span>
-                        <span class="tech-value">e.g., Python, Go, TypeScript</span>
+                <div class="divider"></div>
+
+                <!-- Technology Stack -->
+                <section id="tech-stack">
+                    <h2>Technology Stack</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-label">Language</span>
+                            <span class="tech-value">e.g., Python, Go, TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Framework</span>
+                            <span class="tech-value">e.g., React, Django, Fiber</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Database</span>
+                            <span class="tech-value">e.g., PostgreSQL, MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Infrastructure</span>
+                            <span class="tech-value">e.g., Docker, Kubernetes</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Testing</span>
+                            <span class="tech-value">e.g., Jest, pytest</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Other Tools</span>
+                            <span class="tech-value">e.g., Redis, Nginx</span>
+                        </div>
                     </div>
-                    <div class="tech-item">
-                        <span class="tech-label">Framework</span>
-                        <span class="tech-value">e.g., React, Django, Fiber</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-label">Database</span>
-                        <span class="tech-value">e.g., PostgreSQL, MongoDB</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-label">Infrastructure</span>
-                        <span class="tech-value">e.g., Docker, Kubernetes</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-label">Testing</span>
-                        <span class="tech-value">e.g., Jest, pytest</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-label">Other Tools</span>
-                        <span class="tech-value">e.g., Redis, Nginx</span>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Installation / Setup -->
-            <section id="installation">
-                <h2>Installation / Setup</h2>
-
-                <h3>Prerequisites</h3>
-                <!-- List what users need before installing -->
-                <ul>
-                    <li>Prerequisite 1, e.g., Node.js 18+</li>
-                    <li>Prerequisite 2, e.g., Docker</li>
-                    <li>Prerequisite 3, e.g., API keys or credentials</li>
-                </ul>
-
-                <h3>Steps</h3>
-                <!-- Provide installation steps - replace with actual commands -->
-                <ol>
-                    <li>
-                        <p>Clone the repository:</p>
-                        <pre><code>git clone https://github.com/organization/project-name.git
+                <!-- Installation / Setup -->
+                <section id="installation">
+                    <h2>Installation / Setup</h2>
+                    <h3>Prerequisites</h3>
+                    <ul>
+                        <li>Prerequisite 1, e.g., Node.js 18+</li>
+                        <li>Prerequisite 2, e.g., Docker</li>
+                        <li>Prerequisite 3, e.g., API keys or credentials</li>
+                    </ul>
+                    <h3>Steps</h3>
+                    <ol>
+                        <li>
+                            <p>Clone the repository:</p>
+                            <pre><code>git clone https://github.com/organization/project-name.git
 cd project-name</code></pre>
-                    </li>
-                    <li>
-                        <p>Install dependencies:</p>
-                        <pre><code># Replace with actual package manager command
+                        </li>
+                        <li>
+                            <p>Install dependencies:</p>
+                            <pre><code># Replace with actual package manager command
 npm install</code></pre>
-                    </li>
-                    <li>
-                        <p>Configure environment variables:</p>
-                        <pre><code>cp .env.example .env
+                        </li>
+                        <li>
+                            <p>Configure environment variables:</p>
+                            <pre><code>cp .env.example .env
 # Edit .env with your configuration</code></pre>
-                    </li>
-                    <li>
-                        <p>Run the application:</p>
-                        <pre><code># Replace with actual start command
+                        </li>
+                        <li>
+                            <p>Run the application:</p>
+                            <pre><code># Replace with actual start command
 npm start</code></pre>
-                    </li>
-                </ol>
-            </section>
+                        </li>
+                    </ol>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Usage -->
-            <section id="usage">
-                <h2>Usage</h2>
-                <!-- Explain how to use the project conceptually -->
-                <p>This project is designed to <strong>[primary use case]</strong>. To get started:</p>
-                <ol>
-                    <li>First step in typical workflow</li>
-                    <li>Second step in typical workflow</li>
-                    <li>Third step in typical workflow</li>
-                </ol>
-                <p>For <strong>[specific use case]</strong>, you can <strong>[action]</strong>. The system supports
-                    <strong>[capability]</strong>, allowing users to <strong>[outcome]</strong>.</p>
-                <p>Refer to the <a href="#">API documentation</a> / <a href="#">user guide</a> / <a href="#">examples
-                        directory</a> for detailed usage patterns.</p>
-            </section>
+                <!-- Usage -->
+                <section id="usage">
+                    <h2>Usage</h2>
+                    <p>This project is designed to <strong>[primary use case]</strong>. To get started:</p>
+                    <ol>
+                        <li>First step in typical workflow</li>
+                        <li>Second step in typical workflow</li>
+                        <li>Third step in typical workflow</li>
+                    </ol>
+                    <p>For <strong>[specific use case]</strong>, you can <strong>[action]</strong>. The system supports
+                        <strong>[capability]</strong>, allowing users to <strong>[outcome]</strong>.
+                    </p>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Project Structure -->
-            <section id="structure">
-                <h2>Project Structure</h2>
-                <!-- Show the main directories and files -->
-                <div class="file-tree">
-                    <div class="file-tree-line">project-name/</div>
-                    <div class="file-tree-line">├── src/ <span class="comment"># Source code</span></div>
-                    <div class="file-tree-line">│ ├── components/ <span class="comment"># Reusable components or
-                            modules</span></div>
-                    <div class="file-tree-line">│ ├── services/ <span class="comment"># Business logic and external
-                            integrations</span></div>
-                    <div class="file-tree-line">│ └── utils/ <span class="comment"># Helper functions and
-                            utilities</span></div>
-                    <div class="file-tree-line">├── tests/ <span class="comment"># Test files</span></div>
-                    <div class="file-tree-line">├── docs/ <span class="comment"># Additional documentation</span></div>
-                    <div class="file-tree-line">├── config/ <span class="comment"># Configuration files</span></div>
-                    <div class="file-tree-line">├── scripts/ <span class="comment"># Build and deployment scripts</span>
+                <!-- Project Structure -->
+                <section id="structure">
+                    <h2>Project Structure</h2>
+                    <div class="file-tree">
+                        <div class="file-tree-line">project-name/</div>
+                        <div class="file-tree-line">├── src/ <span class="comment"># Source code</span></div>
+                        <div class="file-tree-line">│ ├── components/ <span class="comment"># Reusable modules</span>
+                        </div>
+                        <div class="file-tree-line">│ ├── services/ <span class="comment"># Business logic</span></div>
+                        <div class="file-tree-line">│ └── utils/ <span class="comment"># Helpers</span></div>
+                        <div class="file-tree-line">├── tests/ <span class="comment"># Test files</span></div>
+                        <div class="file-tree-line">├── README.md <span class="comment"># Overview</span></div>
+                        <div class="file-tree-line">└── LICENSE <span class="comment"># License</span></div>
                     </div>
-                    <div class="file-tree-line">├── .env.example <span class="comment"># Environment variable
-                            template</span></div>
-                    <div class="file-tree-line">├── README.md <span class="comment"># Project overview</span></div>
-                    <div class="file-tree-line">└── LICENSE <span class="comment"># License information</span></div>
-                </div>
-            </section>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Contribution Guidelines -->
-            <section id="contributing">
-                <h2>Contribution Guidelines</h2>
-                <!-- Outline the process for contributing -->
-                <p>We welcome contributions from the community. To contribute:</p>
-                <ol>
-                    <li><strong>Fork the repository</strong> and create a feature branch</li>
-                    <li><strong>Make your changes</strong> following the project's coding standards</li>
-                    <li><strong>Write tests</strong> for new functionality</li>
-                    <li><strong>Submit a pull request</strong> with a clear description of your changes</li>
-                </ol>
-                <p>Please ensure your code passes all tests and follows the existing style. For major changes, open an
-                    issue first to discuss your proposal.</p>
-                <p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for detailed guidelines.</p>
-            </section>
+                <!-- Roadmap -->
+                <section id="roadmap">
+                    <h2>Roadmap</h2>
+                    <div class="roadmap-item">
+                        <div class="roadmap-checkbox"></div>
+                        <div>Planned feature 1</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-checkbox"></div>
+                        <div>Planned feature 2</div>
+                    </div>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Roadmap -->
-            <section id="roadmap">
-                <h2>Roadmap</h2>
-                <!-- List planned features and improvements -->
-                <div class="roadmap-item">
-                    <div class="roadmap-checkbox"></div>
-                    <div>Planned feature or improvement 1</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-checkbox"></div>
-                    <div>Planned feature or improvement 2</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-checkbox"></div>
-                    <div>Planned feature or improvement 3</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-checkbox"></div>
-                    <div>Performance optimization for specific component</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-checkbox"></div>
-                    <div>Integration with additional services</div>
-                </div>
-            </section>
+                <!-- Security -->
+                <section id="security">
+                    <h2>Security</h2>
+                    <p>Please report vulnerabilities to <a
+                            href="mailto:security@organization.com">security@organization.com</a>.</p>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- Security & Responsible Disclosure -->
-            <section id="security">
-                <h2>Security & Responsible Disclosure</h2>
-                <!-- Provide instructions for reporting security vulnerabilities -->
-                <p>We take security seriously. If you discover a security vulnerability, please do not open a public
-                    issue. Instead:</p>
-                <ul>
-                    <li>Email us at <a href="mailto:security@organization.com">security@organization.com</a></li>
-                    <li>Include a detailed description of the vulnerability</li>
-                    <li>Provide steps to reproduce if possible</li>
-                </ul>
-                <p>We will respond within <strong>[timeframe, e.g., 48 hours]</strong> and work with you to address the
-                    issue.</p>
-            </section>
+                <!-- License -->
+                <section id="license">
+                    <h2>License</h2>
+                    <p>Licensed under the <strong>[License Name]</strong> License.</p>
+                </section>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <!-- License -->
-            <section id="license">
-                <h2>License</h2>
-                <!-- Specify the license -->
-                <p>This project is licensed under the <strong>[License Name]</strong> License. See the <a
-                        href="LICENSE">LICENSE</a> file for details.</p>
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- Maintainers -->
-            <section id="maintainers">
-                <h2>Maintainers</h2>
-                <!-- List the organization or key maintainers -->
-                <p>This project is maintained by <strong>127 CREW</strong>.</p>
-                <ul>
-                    <li><strong>Lead Maintainer:</strong> [Name] (<a href="https://github.com/username">GitHub
-                            Profile</a>)</li>
-                    <li><strong>Contributors:</strong> See <a href="CONTRIBUTORS.md">CONTRIBUTORS.md</a> or the <a
-                            href="https://github.com/127crew">GitHub contributors page</a></li>
-                </ul>
-                <p>For questions or support, reach out via <strong>[contact method, e.g., GitHub Discussions, email, or
-                        community forum]</strong>.</p>
-            </section>
-        </main>
+                <!-- Maintainers -->
+                <section id="maintainers">
+                    <h2>Maintainers</h2>
+                    <p>Maintained by <strong>127 CREW</strong>.</p>
+                </section>
+            </main>
+        </div>
 
         <footer>
-            <!-- Organization details -->
             <p><strong>127 CREW</strong></p>
             <div class="footer-links">
                 <a href="https://127crew.dev">Website</a>
@@ -289,7 +229,9 @@ npm start</code></pre>
     <!-- UI Elements -->
     <button id="back-to-top" title="Back to top">↑</button>
 
-    <!-- External JavaScript -->
+    <!-- Navigation Script -->
+    <script src="assets/js/navigation.js"></script>
+    <!-- General Script -->
     <script src="assets/js/main.js"></script>
 </body>
 
