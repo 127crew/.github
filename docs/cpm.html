@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://i.postimg.cc/JhQbkGsX/127crew.png"
+        />
+        <!-- Replace with your project name -->
+        <title>Crew Package Manager - Documentation</title>
+        <!-- Replace with your project description -->
+        <meta
+            name="description"
+            content="Official documentation for Crew, the Git-native package manager for C/C++."
+        />
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Global Header Placeholder -->
+            <header id="global-header"></header>
+
+            <header
+                class="doc-header"
+                style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    border-bottom: none;
+                    padding-bottom: 0;
+                "
+            >
+                <!-- Logo (file-based SVG) -->
+                <a
+                    href="."
+                    aria-label="Crew Package Manager"
+                    style="display: inline-block"
+                >
+                    <img
+                        src="assets/images/cpm-logo.svg"
+                        alt="CPM logo"
+                        width="64"
+                        height="32"
+                    />
+                </a>
+
+                <div
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 1;
+                    "
+                >
+                    <!-- Replace with your project's actual name -->
+                    <h1 style="margin: 0">Crew Package Manager</h1>
+                    <!-- Replace with a brief description of what your project does -->
+                    <p class="subtitle" style="margin: 0">
+                        A simple, Git-centric, npm-like package manager for C
+                        and C++ projects.
+                    </p>
+                </div>
+            </header>
+
+            <div class="layout-wrapper">
+                <!-- Global Sidebar Placeholder -->
+                <aside id="global-sidebar" class="sidebar"></aside>
+
+                <main class="main-content">
+                    <!-- Why This Project Exists -->
+                    <section id="why">
+                        <h2>Why This Project Exists</h2>
+                        <p>
+                            This project addresses the
+                            <strong
+                                >complexity and fragmentation of dependency
+                                management in C and C++</strong
+                            >. Existing solutions often
+                            <strong
+                                >require steep learning curves, complex build
+                                system integrations, or proprietary
+                                registries</strong
+                            >, and this project was created to
+                            <strong
+                                >provide a streamlined, Git-centric experience
+                                similar to modern package managers like npm or
+                                cargo</strong
+                            >.
+                        </p>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Key Features -->
+                    <section id="features">
+                        <h2>Key Features</h2>
+                        <ul>
+                            <li>
+                                <strong>Zero-Config Scaffolding:</strong>
+                                Instant project creation with
+                                <code>crew create</code>.
+                            </li>
+                            <li>
+                                <strong>Git-Native Dependencies:</strong>
+                                Install any library directly via URL, branch, or
+                                tag.
+                            </li>
+                            <li>
+                                <strong>Automated Include Flags:</strong> Easily
+                                generate <code>-I</code> paths for your
+                                compiler.
+                            </li>
+                            <li>
+                                <strong>Built-in Script Runner:</strong>
+                                Automate build and run tasks via
+                                <code>crew.json</code>.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Architecture Overview -->
+                    <section id="architecture">
+                        <h2>Architecture Overview</h2>
+                        <p>
+                            Crew follows a
+                            <strong>modular CLI</strong> architecture designed
+                            for speed and simplicity. The main components
+                            include:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>CLI Entry (crew.py):</strong> Parses
+                                user commands and routes them to the appropriate
+                                logic.
+                            </li>
+                            <li>
+                                <strong>Engine (crew_utils.py):</strong> Handles
+                                the heavy lifting of dependency resolution, Git
+                                operations, and manifest management.
+                            </li>
+                            <li>
+                                <strong>Storage (crew_modules/):</strong> A
+                                local workspace where all project dependencies
+                                are housed and versioned.
+                            </li>
+                        </ul>
+                        <p>
+                            Data flows from
+                            <strong>remote Git repositories</strong> via
+                            <code>git clone</code> into
+                            <strong>local subdirectories</strong>. The system
+                            maintains project state in <code>crew.json</code>,
+                            allowing it to be
+                            <strong
+                                >highly portable and easy to version
+                                control</strong
+                            >.
+                        </p>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Technology Stack -->
+                    <section id="tech-stack">
+                        <h2>Technology Stack</h2>
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <span class="tech-label">Language</span>
+                                <span class="tech-value">Python 3</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">Version Control</span>
+                                <span class="tech-value">Git</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">Distribution</span>
+                                <span class="tech-value">PyPI (crew-cli)</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">License</span>
+                                <span class="tech-value">GPL-3.0</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">OS Support</span>
+                                <span class="tech-value"
+                                    >Linux, macOS, Windows</span
+                                >
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Installation / Setup -->
+                    <section id="installation">
+                        <h2>Installation / Setup</h2>
+                        <h3>Prerequisites</h3>
+                        <ul>
+                            <li>Python 3.6 or higher</li>
+                            <li>
+                                Git installed and accessible in the system path
+                            </li>
+                            <li>Internet connection (for library fetching)</li>
+                        </ul>
+                        <h3>Steps</h3>
+                        <ol>
+                            <li>
+                                <p>Scaffold your first project:</p>
+                                <pre><code>crew create my-app --template cpp
+cd my-app</code></pre>
+                            </li>
+                            <li>
+                                <p>Install a library (e.g., nlohmann/json):</p>
+                                <pre><code>crew install https://github.com/nlohmann/json.git</code></pre>
+                            </li>
+                            <li>
+                                <p>
+                                    Add the include flags to your build command:
+                                </p>
+                                <pre><code>g++ main.cpp $(crew flags) -o app</code></pre>
+                            </li>
+                            <li>
+                                <p>
+                                    Run your application using the build script:
+                                </p>
+                                <pre><code>crew run build && crew run start</code></pre>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Usage -->
+                    <section id="usage">
+                        <h2>Usage</h2>
+                        <p>
+                            Crew is designed to
+                            <strong>bring developer happiness to C++</strong>.
+                            To get started:
+                        </p>
+                        <ol>
+                            <li>
+                                Run <code>pip install crew-cli</code> to get the
+                                tool globally.
+                            </li>
+                            <li>
+                                Use <code>crew init</code> to add Crew to an
+                                existing project.
+                            </li>
+                            <li>
+                                Use <code>crew install url@tag</code> to pin
+                                dependencies to specific versions.
+                            </li>
+                        </ol>
+                        <p>
+                            For <strong>automated builds</strong>, you can use
+                            <code>crew run</code> to execute scripts defined in
+                            your manifest. The system supports
+                            <strong>modern Git workflows</strong>, allowing
+                            users to
+                            <strong
+                                >manage dependencies without a central
+                                server</strong
+                            >.
+                        </p>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Project Structure -->
+                    <section id="structure">
+                        <h2>Project Structure</h2>
+                        <div class="file-tree">
+                            <div class="file-tree-line">crewPM/</div>
+                            <div class="file-tree-line">
+                                ├── crew.py
+                                <span class="comment"># CLI entry point</span>
+                            </div>
+                            <div class="file-tree-line">
+                                ├── crew_utils.py
+                                <span class="comment"
+                                    ># Core logic & git handling</span
+                                >
+                            </div>
+                            <div class="file-tree-line">
+                                ├── crew.json
+                                <span class="comment"># Project manifest</span>
+                            </div>
+                            <div class="file-tree-line">
+                                ├── crew_modules/
+                                <span class="comment"
+                                    ># Dependency storage folder</span
+                                >
+                            </div>
+                            <div class="file-tree-line">
+                                ├── docs/
+                                <span class="comment"
+                                    ># Documentation & Website</span
+                                >
+                            </div>
+                            <div class="file-tree-line">
+                                └── LICENSE
+                                <span class="comment"
+                                    ># GPL-3.0 License file</span
+                                >
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Roadmap -->
+                    <section id="roadmap">
+                        <h2>Roadmap</h2>
+                        <div class="roadmap-item">
+                            <div
+                                class="roadmap-checkbox"
+                                style="background: var(--accent)"
+                            >
+                                ✓
+                            </div>
+                            <div>Git-based dependency management</div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-checkbox"></div>
+                            <div>Centralized Package Registry API</div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-checkbox"></div>
+                            <div>Binary Caching for faster installs</div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-checkbox"></div>
+                            <div>CMake Integration Plugin</div>
+                        </div>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Security -->
+                    <section id="security">
+                        <h2>Security</h2>
+                        <p>
+                            Please report vulnerabilities to the
+                            <strong>127 CREW</strong> maintainers via our GitHub
+                            repository.
+                        </p>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- License -->
+                    <section id="license">
+                        <h2>License</h2>
+                        <p>
+                            Licensed under the
+                            <strong
+                                >GNU General Public License v3.0
+                                (GPL-3.0)</strong
+                            >.
+                        </p>
+                    </section>
+
+                    <div class="divider"></div>
+
+                    <!-- Maintainers -->
+                    <section id="maintainers">
+                        <h2>Maintainers</h2>
+                        <p>Maintained by <strong>127 CREW</strong>.</p>
+                    </section>
+                </main>
+            </div>
+
+            <footer>
+                <p><strong>127 CREW</strong></p>
+                <div class="footer-links">
+                    <a href="https://127crew.dev">Main Site</a>
+                    <a href="https://github.com/127crew">GitHub</a>
+                    <a href="https://pypi.org/project/crew-cli/">PyPI</a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- UI Elements -->
+        <button id="back-to-top" title="Back to top">↑</button>
+
+        <!-- Navigation Script -->
+        <script src="assets/js/navigation.js"></script>
+        <!-- General Script -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
