@@ -14,6 +14,7 @@ const navigationConfig = {
     },
     documentation: [
         { label: "Project Template", url: "documentation-template.html" },
+        { label: "Crew Package Manager", url: "cpm.html" },
         // Add more documents here: { label: "My Project", url: "my-project.html" }
     ]
 };
